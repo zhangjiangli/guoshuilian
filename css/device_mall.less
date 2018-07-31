@@ -1,0 +1,170 @@
+body {
+    header {
+        height: 104px;
+    }
+    .filter {
+        margin-top: 42px;
+        font-size: 14px;
+        line-height: 55px;
+        color: #333;
+        >div {
+            height: 55px;
+            border-bottom: dashed 1px #e6e6e6;
+        }
+        span {
+            color: #999
+        }
+        a {
+            color: #333;
+            margin: 0 20px;
+        }
+        a:hover {
+            color: #0081cb
+        }
+        .prices {
+            vertical-align: middle;
+            input {
+                border: #e6e6e6 solid 1px;
+                height: 23px;
+                width: 108px;
+                color: #999;
+                background: url("../images/price_logo.png") no-repeat 10% center;
+                text-indent: 24px;
+            }
+            input.first {
+                margin-left: 50px;
+            }
+            .line {
+                margin: 0 6px;
+            }
+            .button {
+                background: #0081cb;
+                color: #fff;
+                border: none;
+                text-indent: 0;
+                width: 72px;
+                height: 25px;
+                margin-left: 18px; // margin-top: 16px;
+            }
+        }
+        .sort {
+            font-size: 12px;
+            border-bottom: #e6e6e6 dashed 1px;
+            label {
+                height: 25px;
+                line-height: 25px;
+                display: inline-block;
+                color: #999;
+            }
+            input {
+                font-size: 12px;
+                margin: 0;
+                margin-left: 20px;
+                width: 62px;
+                height: 25px;
+                background: #fff;
+                border: 1px solid #e6e6e6;
+                color: #333;
+            }
+            .actived {
+                background: #0081cb;
+                color: #fff;
+                border: 1px solid #0081cb;
+            }
+            .rq {
+                margin-left: 56px;
+            }
+        }
+    }
+    .main {
+        padding-top: 40px;
+        .myrow {
+            height: 364px;
+            margin-bottom: 20px;
+            >div {
+                width: 22.6%;
+                height: 100%;
+                float: left;
+                margin-right: 3.1%; // border: solid 1px #e6e6e6;
+                cursor: pointer;
+                .img_box {
+                    height: 276px;
+                    position: relative;
+                    img {
+                        // display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                    }
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 12px;
+                    margin-top: 26px;
+                    margin-bottom: 12px;
+                    overflow: hidden;
+                    /*溢出隐藏*/
+                    text-overflow: ellipsis;
+                    /*以省略号...显示*/
+                    white-space: nowrap;
+                }
+                span:hover{
+                    cursor:pointer; 
+                    overflow: hidden;
+                    /*溢出隐藏*/
+                    text-overflow: ellipsis;
+                    /*以省略号...显示*/
+                    white-space: nowrap;
+                }
+                span.red {
+                    color: #f24a3b;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+            }
+            >div:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .page {
+        padding-top: 28px;
+        margin-bottom: 90px;
+        #myPage {
+            >div {
+                float: right;
+            }
+            .layui-laypage a {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage a:hover {
+                color: #0081cb;
+            }
+            .layui-laypage .layui-laypage-curr {
+                position: relative;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage .layui-laypage-spr {
+                color: #999;
+                font-weight: 700;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage .layui-laypage-curr .layui-laypage-em {
+                background-color: #fff;
+            }
+            .layui-laypage .layui-laypage-curr em {
+                color: #0081cb;
+            }
+            .layui-laypage button {
+                background: #0081cb;
+                color: #fff;
+            }
+        }
+    }
+}

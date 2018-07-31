@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header{
+            position: fixed;
+            width: 100%;
+            z-index: 10000;
+            background: #fff;
+        }
+        .headTop{
+            height: 44px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .headTop .head_logo{
+            width: 72px;
+            height: 100%;
+            float: left;
+            background: url("./img/logo1.png") no-repeat left center;
+        }
+        .headTop ul{
+            float: right;
+            height: 100%;
+            
+        }
+        .headTop ul li{
+            float: left;
+            height: 100%;
+            line-height: 44px;
+            margin-left: 24px;
+        }
+        .headTop li a button{
+            width: 64px;
+            height: 24px;
+        }
+        .headTop li #Login{
+            background: #0081cb;
+            color: #fff;
+            cursor: pointer;
+        }
+        .headTop li #Register{
+            background: #fff;
+            color: #333;
+            border: #ccc solid 1px;
+            cursor: pointer;
+        }
+        .headTop ul li:last-child{
+            margin-left: 16px;
+        }
+        .headTop ul li:first-child{
+            text-indent: 20px;
+            background: url("./img/cart1.png") no-repeat left center;
+        }
+        .headBottom{
+            height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-top: #f1f1f2 solid 1px;
+            border-bottom: #f1f1f2 solid 1px;
+            box-sizing: border-box;
+        }
+        .headb_l{
+            float: left;
+            height: 60px;
+        }
+        .headb_l ul li{
+            height: 60px;
+            line-height: 60px;
+            margin-right: 47px;
+            float: left;
+            font-size: 16px;
+        }
+        .headb_l .hot_logo{
+            position: relative;
+        }
+        .headb_l .hot_logo img{
+            /* background: url("./img/HOT.png") no-repeat 126% 10%; */
+            position: absolute;
+            top: 5px;
+            right: -20px;
+        }
+        .headb_l ul li a{
+            display: block;
+            height: 100%;
+        }
+        .headb_l ul li:hover{
+            color: #0081cb;
+            border-bottom: solid #0081cb 2px;
+        }
+        .headb_l ul li:hover a{
+            color: #0081cb;
+            
+        }
+        .headb_r{
+            float: right;
+            padding-top: 15px;
+            box-sizing: border-box;
+        }
+        .headb_r>input{
+            width: 280px;
+            height: 32px;
+            background: #f9f9f9;
+            border: solid #ccc 1px;
+            text-indent: 10px;
+            padding-right: 25px;
+            background: url("./img/search1.png") no-repeat 96% center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headTop">
+            <a href="javascript:;" class="head_logo"></a>
+            <ul>
+                <li><a href="javascript:;">进货单</a></li>
+                <li><a href="javascript:;">用户中心</a></li>
+                <li><a href="javascript:;"><button id="Login" type="button">登录</button></a></li>
+                <li><a href="javascript:;"><button id="Register" type="button">注册</button></a></li>
+            </ul>
+        </div>
+        <div class="headBottom">
+            <div class="headb_l">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li class="hot_logo"><a href="javascript">设备商城<img src="./img/HOT.png" alt=""></a></li>
+                    <li><a href="javascript">零件商城</a></li>
+                </ul>
+            </div>
+            <div class="headb_r">
+                <input type="" placeholder="请输入设备/零件关键词">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+body {
+    font-size: 14px;
+    color: #333;
+    header {
+        height: 104px;
+    }
+    .navbar {
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        .last_icon {
+            color: #989898;
+        }
+        .last_a {
+            color: #989898;
+        }
+    }
+    section {
+        .top {
+            height: 410px;
+            .carousel_img {
+                width: 76.5%;
+                height: 320px;
+                float: left;
+                >div {
+                    position: relative;
+                    .mask {
+                        background: rgba(0, 0, 0, .4);
+                        width: 100%;
+                        height: 38px;
+                        line-height: 38px;
+                        font-size: 14px;
+                        color: rgba(255, 255, 255, .9);
+                        padding-left: 10px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+                .img1 {
+                    width: 596px;
+                    height: 100%;
+                    float: left;
+                    background: url("../images/zixun_1.png") no-repeat 15% center;
+                    .mask {
+                        height: 48px;
+                        line-height: 48px;
+                        font-size: 16px;
+                        padding-left: 18px;
+                    }
+                }
+                .img2 {
+                    width: 282px;
+                    height: 155px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    float: left;
+                    background: url("../images/zixun_2.png") no-repeat 15% center;
+                }
+                .img3 {
+                    width: 282px;
+                    height: 155px;
+                    margin-left: 10px;
+                    float: left;
+                    background: url("../images/zixun_3.png") no-repeat 15% center;
+                }
+            }
+            .hot_article {
+                width: 23.5%; // height: 100%;
+                height: 350px;
+                height: auto;
+                float: left;
+                border: solid 1px #e6e6e6;
+                padding-right: 10px;
+                .title {
+                    height: 48px;
+                    padding-left: 18px;
+                    border-bottom: 1px solid #e6e6e6;
+                    font-size: 16px;
+                    line-height: 56px;
+                }
+                ul {
+                    margin: 30px 0 30px 20px;
+                    li {
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                        .hover_show {
+                            background: #f9f9f9;
+                            padding-left: 40px;
+                            padding-right: 20px;
+                            display: none;
+                        }
+                        .num {
+                            width: 20px;
+                            height: 20px;
+                            text-align: center;
+                            display: block;
+                            background: #9d9d9d;
+                            color: #fff;
+                            float: left;
+                            margin-right: 20px;
+                        }
+                    }
+                    li:nth-child(-n+3) span {
+                        background: #333;
+                    }
+                    li.hover {
+                        height: 74px;
+                        background: #f9f9f9;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        margin-left: -10px;
+                    }
+                    /* li:hover .hover_show{
+                        display: block;
+                    } */
+                }
+            }
+        }
+        .bottom {
+            width: 888px;
+            a {
+                display: block; // border: 1px solid #0084c9;
+                width: 886px;
+                height: 100%;
+                height: 200px;
+                padding: 30px 20px 0 30px;
+                .a_sec {
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 1px solid #e6e6e6;
+                    background: pink;
+                    background: url("../images/art_detail.png") no-repeat left top;
+                    background-size: 222px 140px;
+                    .info {
+                        margin-left: 282px;
+                        padding-right: 38px;
+                        h3 {
+                            padding-top: 2px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                        }
+                        span {
+                            font-size: 14px;
+                            line-height: 26px;
+                        }
+                        p.time {
+                            margin-top: 44px;
+                            background: url("../images/clock.png") no-repeat left center;
+                            text-indent: 20px;
+                            height: 14px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            a:hover {
+                outline: 1px solid #0084c9;
+            }
+            a:hover h3 {
+                color: #0084c9;
+            }
+        }
+    }
+    .page {
+        padding-top: 28px;
+        margin-bottom: 90px;
+        #myPage {
+            >div {
+                float: right;
+            }
+            .layui-laypage a {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage a:hover {
+                color: #0081cb;
+            }
+            .layui-laypage .layui-laypage-curr {
+                position: relative;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage .layui-laypage-spr {
+                color: #999;
+                font-weight: 700;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            .layui-laypage .layui-laypage-curr .layui-laypage-em {
+                background-color: #fff;
+            }
+            .layui-laypage .layui-laypage-curr em {
+                color: #0081cb;
+            }
+            .layui-laypage button {
+                background: #0081cb;
+                color: #fff;
+            }
+        }
+    }
+}

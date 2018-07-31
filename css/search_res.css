@@ -1,0 +1,119 @@
+body header {
+  height: 104px;
+}
+body .navbar {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  margin-top: 22px;
+  margin-bottom: 48px;
+}
+body .navbar .last_icon {
+  color: #989898;
+}
+body .navbar .last_a {
+  color: #989898;
+}
+body .sort {
+  font-size: 12px;
+  padding-bottom: 25px;
+  border-bottom: #e6e6e6 dashed 1px;
+  /* input:hover{
+            outline: #0081cb solid 1px!important;
+            
+        } */
+}
+body .sort label {
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  color: #999;
+}
+body .sort input {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 20px;
+  width: 62px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  color: #333;
+  cursor: pointer;
+}
+body .sort .actived {
+  background: #0081cb;
+  color: #fff;
+  border: 1px solid #0081cb;
+}
+body .main {
+  padding-top: 40px;
+}
+body .main .myrow {
+  height: 364px;
+  margin-bottom: 20px;
+}
+body .main .myrow > div {
+  width: 22.5%;
+  height: 100%;
+  float: left;
+  margin-right: 3.07%;
+  border: solid 1px #e6e6e6;
+}
+body .main .myrow > div .img_box {
+  height: 288px;
+  position: relative;
+}
+body .main .myrow > div .img_box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+body .main .myrow > div span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+body .main .myrow > div span.red {
+  color: #f24a3b;
+}
+body .main .myrow > div:last-child {
+  margin-right: 0;
+}
+body .page {
+  padding-top: 28px;
+  margin-bottom: 90px;
+}
+body .page #myPage > div {
+  float: right;
+}
+body .page #myPage .layui-laypage a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage a:hover {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr {
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-spr {
+  color: #999;
+  font-weight: 700;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #fff;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr em {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage button {
+  background: #0081cb;
+  color: #fff;
+}

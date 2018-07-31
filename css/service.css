@@ -1,0 +1,65 @@
+body {
+  color: #333;
+  font-size: 14px;
+}
+body header {
+  height: 104px;
+}
+body .navbar {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+body .navbar .last_icon {
+  color: #989898;
+}
+body .navbar .last_a {
+  color: #989898;
+}
+body section {
+  border: #e6e6e6 solid 1px;
+  height: 500px;
+  padding: 30px 40px;
+}
+body section h3 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+body section p {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+body section .service_flow > div {
+  height: 60px;
+}
+body section .service_flow > div .flow_1 {
+  width: 150px;
+  height: 60px;
+  float: left;
+}
+body section .service_flow > div .flow_1 img {
+  display: block;
+  margin: 0 auto;
+}
+body section .service_flow > div .flow_1 span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+body section .service_flow > div .flow_logo {
+  width: 20px;
+  height: 60px;
+  float: left;
+  background: url("../images/flow.png") no-repeat center center;
+}
+body section button {
+  width: 124px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #0081cb;
+  display: block;
+  margin-top: 76px;
+}

@@ -1,0 +1,148 @@
+body {
+  font-size: 14px;
+  color: #333;
+}
+body header {
+  height: 82px;
+  padding: 0 18px;
+  line-height: 82px;
+  text-align: right;
+  overflow: hidden;
+}
+body header .logo {
+  width: 114px;
+  height: 44px;
+  margin-left: 18px;
+  margin-top: 19px;
+  float: left;
+  background: url("../images/logo.png") no-repeat center;
+}
+body section {
+  width: 100%;
+  min-height: 560px;
+  background: url("../images/login_bg.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+body section .contain {
+  width: 1000px;
+  height: 560px;
+  margin: 0 auto;
+}
+body section .contain .left {
+  width: 64.2%;
+  float: left;
+  color: #fff;
+}
+body section .contain .left .title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 190px;
+  margin-bottom: 38px;
+}
+body section .contain .left h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+body section .contain .right {
+  width: 35.8%;
+  height: 374px;
+  margin-top: 64px;
+  float: left;
+  background: #fff;
+  border: #e4e7e6 solid 1px;
+  padding: 0 20px;
+}
+body section .contain .right .form_t {
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+body section .contain .right form {
+  position: relative;
+  z-index: 10;
+}
+body section .contain .right form input {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+  text-indent: 10px;
+  border: #c5c5c5 solid 1px;
+}
+body section .contain .right form .close {
+  display: block;
+  background: url(../images/close.png) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 288px;
+  display: none;
+}
+body section .contain .right form .yzm {
+  width: 239px;
+  display: block;
+  float: left;
+}
+body section .contain .right form .getYzm {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  float: left;
+  border: #c5c5c5 solid 1px;
+  border-left: none;
+  width: 77px;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+}
+body section .contain .right form button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background: #0081cb;
+  color: #fff;
+}
+body section .contain .right form p a {
+  color: #666;
+}
+body section .contain .right form p a.regist {
+  float: right;
+}
+body section .contain .right .tip {
+  margin-top: -300px;
+  height: 262px;
+  position: relative;
+  font-size: 12px;
+  color: #d81e06;
+}
+body section .contain .right .tip p {
+  position: absolute;
+  display: none;
+}
+body section .contain .right .tip p i {
+  font-size: 14px;
+}
+body section .contain .right .tip p:nth-child(1) {
+  top: 82px;
+}
+body section .contain .right .tip p:nth-child(2) {
+  top: 146px;
+}
+body section .contain .right .tip p:nth-child(3) {
+  top: 211px;
+}
+body footer {
+  height: 51px;
+  margin-top: 48px;
+  line-height: 51px;
+  font-size: 12px;
+  text-align: center;
+}

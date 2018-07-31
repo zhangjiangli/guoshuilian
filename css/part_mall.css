@@ -1,0 +1,150 @@
+body header {
+  height: 104px;
+}
+body .filter {
+  margin-top: 42px;
+  font-size: 14px;
+  line-height: 55px;
+  color: #333;
+}
+body .filter > div {
+  height: 55px;
+  border-bottom: dashed 1px #e6e6e6;
+}
+body .filter span {
+  color: #999;
+}
+body .filter a {
+  color: #333;
+  margin: 0 20px;
+}
+body .filter a:hover {
+  color: #0081cb;
+}
+body .filter .prices {
+  vertical-align: middle;
+}
+body .filter .prices input {
+  border: #e6e6e6 solid 1px;
+  height: 23px;
+  width: 108px;
+  color: #999;
+  background: url("../images/price_logo.png") no-repeat 10% center;
+  text-indent: 24px;
+}
+body .filter .prices input.first {
+  margin-left: 50px;
+}
+body .filter .prices .line {
+  margin: 0 6px;
+}
+body .filter .prices .button {
+  background: #0081cb;
+  color: #fff;
+  border: none;
+  text-indent: 0;
+  width: 72px;
+  height: 25px;
+  margin-left: 18px;
+}
+body .filter .sort {
+  font-size: 12px;
+  border-bottom: #e6e6e6 dashed 1px;
+}
+body .filter .sort label {
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  color: #999;
+}
+body .filter .sort input {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 20px;
+  width: 62px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  color: #333;
+}
+body .filter .sort .actived {
+  background: #0081cb;
+  color: #fff;
+  border: 1px solid #0081cb;
+}
+body .filter .sort .rq {
+  margin-left: 56px;
+}
+body .main {
+  padding-top: 40px;
+}
+body .main .myrow {
+  height: 364px;
+  margin-bottom: 20px;
+}
+body .main .myrow > div {
+  width: 22.5%;
+  height: 100%;
+  float: left;
+  margin-right: 3.1%;
+  border: solid 1px #e6e6e6;
+  cursor: pointer;
+}
+body .main .myrow > div .img_box {
+  height: 288px;
+  position: relative;
+}
+body .main .myrow > div .img_box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+body .main .myrow > div span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+body .main .myrow > div span.red {
+  color: #f24a3b;
+}
+body .main .myrow > div:last-child {
+  margin-right: 0;
+}
+body .page {
+  padding-top: 28px;
+  margin-bottom: 90px;
+}
+body .page #myPage > div {
+  float: right;
+}
+body .page #myPage .layui-laypage a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage a:hover {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr {
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-spr {
+  color: #999;
+  font-weight: 700;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #fff;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr em {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage button {
+  background: #0081cb;
+  color: #fff;
+}

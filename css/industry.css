@@ -1,0 +1,203 @@
+body {
+  font-size: 14px;
+  color: #333;
+}
+body header {
+  height: 104px;
+}
+body .navbar {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+body .navbar .last_icon {
+  color: #989898;
+}
+body .navbar .last_a {
+  color: #989898;
+}
+body section .top {
+  height: 410px;
+}
+body section .top .carousel_img {
+  width: 76.5%;
+  height: 320px;
+  float: left;
+}
+body section .top .carousel_img > div {
+  position: relative;
+}
+body section .top .carousel_img > div .mask {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body section .top .carousel_img .img1 {
+  width: 596px;
+  height: 100%;
+  float: left;
+  background: url("../images/zixun_1.png") no-repeat 15% center;
+}
+body section .top .carousel_img .img1 .mask {
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  padding-left: 18px;
+}
+body section .top .carousel_img .img2 {
+  width: 282px;
+  height: 155px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+  background: url("../images/zixun_2.png") no-repeat 15% center;
+}
+body section .top .carousel_img .img3 {
+  width: 282px;
+  height: 155px;
+  margin-left: 10px;
+  float: left;
+  background: url("../images/zixun_3.png") no-repeat 15% center;
+}
+body section .top .hot_article {
+  width: 23.5%;
+  height: 350px;
+  height: auto;
+  float: left;
+  border: solid 1px #e6e6e6;
+  padding-right: 10px;
+}
+body section .top .hot_article .title {
+  height: 48px;
+  padding-left: 18px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 56px;
+}
+body section .top .hot_article ul {
+  margin: 30px 0 30px 20px;
+  /* li:hover .hover_show{
+                        display: block;
+                    } */
+}
+body section .top .hot_article ul li {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+body section .top .hot_article ul li .hover_show {
+  background: #f9f9f9;
+  padding-left: 40px;
+  padding-right: 20px;
+  display: none;
+}
+body section .top .hot_article ul li .num {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  background: #9d9d9d;
+  color: #fff;
+  float: left;
+  margin-right: 20px;
+}
+body section .top .hot_article ul li:nth-child(-n+3) span {
+  background: #333;
+}
+body section .top .hot_article ul li.hover {
+  height: 74px;
+  background: #f9f9f9;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+body section .bottom {
+  width: 888px;
+}
+body section .bottom a {
+  display: block;
+  width: 886px;
+  height: 100%;
+  height: 200px;
+  padding: 30px 20px 0 30px;
+}
+body section .bottom a .a_sec {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  background: pink;
+  background: url("../images/art_detail.png") no-repeat left top;
+  background-size: 222px 140px;
+}
+body section .bottom a .a_sec .info {
+  margin-left: 282px;
+  padding-right: 38px;
+}
+body section .bottom a .a_sec .info h3 {
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+body section .bottom a .a_sec .info span {
+  font-size: 14px;
+  line-height: 26px;
+}
+body section .bottom a .a_sec .info p.time {
+  margin-top: 44px;
+  background: url("../images/clock.png") no-repeat left center;
+  text-indent: 20px;
+  height: 14px;
+  font-size: 12px;
+}
+body section .bottom a:hover {
+  outline: 1px solid #0084c9;
+}
+body section .bottom a:hover h3 {
+  color: #0084c9;
+}
+body .page {
+  padding-top: 28px;
+  margin-bottom: 90px;
+}
+body .page #myPage > div {
+  float: right;
+}
+body .page #myPage .layui-laypage a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage a:hover {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr {
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-spr {
+  color: #999;
+  font-weight: 700;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #fff;
+}
+body .page #myPage .layui-laypage .layui-laypage-curr em {
+  color: #0081cb;
+}
+body .page #myPage .layui-laypage button {
+  background: #0081cb;
+  color: #fff;
+}

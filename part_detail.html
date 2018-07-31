@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零件详情</title>
+    <link rel="stylesheet" href="./js/css/magnifier.css">
+    <link rel="stylesheet" href="./js/lay/theme/layui.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/part_detail.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <header id="myheader">头部导航栏</header>
+        <div class="navbar w">
+            <a href="index.html">首页</a> >
+            <a href="javascript:;">零件商城</a>
+            <span class="last_icon"> > </span>
+            <a href="javascript:;" class="last_a">ZG C107软化树脂</a>
+        </div>
+        <div class="section w clearfix">
+            <div class="magnifier" id="magnifier1">
+                <div class="magnifier-container">
+                    <div class="images-cover"></div>
+                    <!--当前图片显示容器-->
+                    <div class="move-view"></div>
+                    <!--跟随鼠标移动的盒子-->
+                </div>
+                <div class="magnifier-assembly">
+                    <div class="magnifier-btn">
+                        <span class="magnifier-btn-left">&lt;</span>
+                        <span class="magnifier-btn-right">&gt;</span>
+                    </div>
+                    <!--按钮组-->
+                    <div class="magnifier-line">
+                        <ul class="clearfix animation03">
+                            <li>
+                                <div class="small-img">
+                                    <img src="images/1_1.png" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="images/device1.png" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="images/big.png" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="images/1_1.png" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="images/1.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--缩略图-->
+                </div>
+                <div class="magnifier-view"></div>
+                <!--经过放大的图片显示容器-->
+                <div class="collect">
+                    收藏
+                </div>
+            </div>
+            <div class="info">
+                <h3>ZG C107软化树脂 </h3>
+                <div class="money">
+                    <span>定金：</span>
+                    <span class="redFont">¥20/L</span>
+                    <span>价格：</span>
+                    <span class="blackFont">¥20/L</span>
+                </div>
+                <div class="ul clearfix">
+                    <ul class="name">
+                        <li>供应商</li>
+                        <li>付款方式</li>
+                        <li>货期</li>
+                        <li>重量</li>
+                        <li>保质期</li>
+                    </ul>
+                    <ul class="message">
+                        <li>深圳市水源有限公司
+                            <a href="javascript:;" id="tell">联系卖家</a>
+                        </li>
+                        <li>定金（30%）+提货款（70%）</li>
+                        <li>预计6月20号到货</li>
+                        <li>0.2kg</li>
+                        <li>商品发货后30天内免费维修
+                            <a href="javascript:;" id="detail">了解详情</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <table border="2">
+                        <tr>
+                            <th>型号</th>
+                            <th>价格</th>
+                            <th>采购量</th>
+                        </tr>
+                        <tr>
+                            <td>C100EFG</td>
+                            <td>¥20.00</td>
+                            <td>
+                                <el-input-number v-model="num1" @change="handleChange" :min="0" :max="10" label="描述文字"></el-input-number>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C100E</td>
+                            <td>¥20.00</td>
+                            <td>
+                                <el-input-number v-model="num2" @change="handleChange2" :min="0" :max="10" label="描述文字"></el-input-number>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="btns">
+                    <button>加入进货单</button>
+                    <button>立刻付定金</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab_box w">
+            <div class="top clearfix">
+                <div class="tab1 tab_active">产品介绍</div>
+                <div class="tab2">评价 (
+                    <span class="assessCount">3</span> )</div>
+            </div>
+            <div class="contain">
+                <div class="introduce">
+                    <div class="font">
+                        设计工艺：采用“预处理→一级RO→二级RO→EDI→精混工艺。在设计上，采用世界上最先进的反渗透膜组件，一是传统型的反渗透+混床除盐装置，二是改良型成熟、可靠、先进、 自动化程度高的二级RO＋EDI＋精混床除盐水处理工艺，确保处理后的超纯水水质出水电阻率达到18.2
+                        MΩ.cm，后处理采用紫外线杀菌器和精密过滤器隔绝细菌的二次污染，这是目 前制取超纯水最经济，最环保的超纯水制备工艺，产水可达到国家电子级水的技术指针GB 11446.1-1997超纯水。不需要用酸碱进行再生便可连续制取超纯水，对环境没什么破坏性。
+                        关键设备及材料均采用国际主流先进可靠产品，采用PLC＋触摸屏控制，全套系统自动化程度高，系统稳定性高。大大节省人力成本和维护成本，水利用率高，运行可靠，经济合理。 使设备与其它同类产品相比较，具有更高的性价比和设备可靠性。
+                    </div>
+                    <img src="./images/detail_1.png" alt="" class="con_img1">
+                    <h4>原材料构成</h4>
+                    <img src="./images/made.png" alt="" class="con_img2">
+                </div>
+                <div class="assess">
+                    <div class="asseaa_box">
+                        <div class="assess_detail">
+                            <div class="user_info clearfix">
+                                <div class="photo">
+                                    <img src="./images/photo.png" alt="">
+                                </div>
+                                <div class="user_name">思对方念</div>
+                                <div class="rank">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                </div>
+                            </div>
+                            <p class="user_saying">送货都满意！推荐购买！</p>
+                            <p class="reply">【回复】万水联</p>
+                            <p class="other_saying">您的满意就是我们的追求，您的每一次肯定都是对我们的激励</p>
+                            <p class="say_time">2018-5-16 15:35:50</p>
+                        </div>
+                        <div class="assess_detail">
+                            <div class="user_info clearfix">
+                                <div class="photo">
+                                    <img src="./images/photo.png" alt="">
+                                </div>
+                                <div class="user_name">思对方念</div>
+                                <div class="rank">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                </div>
+                            </div>
+                            <p class="user_saying">送货都满意！推荐购买！</p>
+                            <p class="reply">【回复】万水联</p>
+                            <p class="other_saying">您的满意就是我们的追求，您的每一次肯定都是对我们的激励</p>
+                            <p class="say_time">2018-5-16 15:35:50</p>
+                        </div>
+                        <div class="assess_detail">
+                            <div class="user_info clearfix">
+                                <div class="photo">
+                                    <img src="./images/photo.png" alt="">
+                                </div>
+                                <div class="user_name">思对方念</div>
+                                <div class="rank">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                    <img src="./images/rank.png" alt="">
+                                </div>
+                            </div>
+                            <p class="user_saying">送货都满意！推荐购买！</p>
+                            <p class="reply">【回复】万水联</p>
+                            <p class="other_saying">您的满意就是我们的追求，您的每一次肯定都是对我们的激励</p>
+                            <p class="say_time">2018-5-16 15:35:50</p>
+                        </div>
+                    </div>
+                    <div class="page w">
+                        <div id="myPage"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 咨询客服和回到顶部 -->
+        <div class="service_con">
+            <div class="service_info">
+                <div class="service_info_t">
+                    <div class="t_l">
+                        <p>意见反馈</p>
+                        <p>对于有疑问的问题可进行留言</p>
+                    </div>
+                    <div class="t_r">
+                        填写反馈
+                    </div>
+                </div>
+                <div class="service_info_b">
+                    <div class="t_l">
+                        <p>在线客服</p>
+                        <p>在线人工咨询产品</p>
+                    </div>
+                    <div class="t_r">
+                        在线咨询
+                    </div>
+                </div>
+
+            </div>
+            <div class="service">
+                咨
+                <br> 询
+                <br> 服
+                <br> 务
+            </div>
+        </div>
+        <div class="goTop"></div>
+        <!-- 底部 -->
+        <div id="myfooter"></div>
+    </div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/lay/layui.all.js"></script>
+<script src='./js/vue.js'></script>
+<script src="./js/magnifier.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./js/common/commonFixed.js"></script>
+<script>
+    $(function () {
+        //放大镜
+        var magnifierConfig = {
+            magnifier: "#magnifier1", //最外层的大容器
+            width: 400, //承载容器宽
+            height: 400, //承载容器高
+            moveWidth: null, //如果设置了移动盒子的宽度，则不计算缩放比例
+            zoom: 4 //缩放比例
+        };
+
+        var _magnifier = $().imgzoon(magnifierConfig);
+        
+        //点击收藏
+        $(".collect").click(function () {
+            $(this).toggleClass("hasCollect")
+        })
+        
+        //tab栏
+        $(".btns button").click(function () {
+            $(this).addClass("btnStyle").siblings().removeClass("btnStyle")
+        })
+
+        $(".top>div").click(function () {
+            $(this).addClass("tab_active").siblings().removeClass("tab_active")
+            var i = $(this).index();
+            $(".contain>div").eq(i).show().siblings().hide()
+
+        })
+
+        //总页数
+        var pageCount = 40;
+
+        layui.use(['laypage', 'layer'], function () {
+            var laypage = layui.laypage,
+                layer = layui.layer;
+
+            laypage.render({
+                elem: 'myPage',
+                limit: 5,
+                count: pageCount,
+                prev: '< 上一页',
+                next: '下一页 >',
+                theme: '#fff',
+                layout: ['prev', 'page', 'next', 'count', 'skip'],
+                jump: function (obj) {
+                    console.log(obj)
+                }
+            });
+        })
+        $(".layui-laypage-count").html('共 ' + pageCount + ' 页')
+
+    })
+    var tipiv = new Vue({
+        el: "#app",
+        data: {
+            num1: 0,
+            num2: 0
+        },
+        methods: {
+            handleChange(value) {
+                console.log(value);
+            },
+            handleChange2(value) {
+                console.log(value);
+            }
+        },
+        mounted: function () {
+
+        }
+
+    })
+</script>
+
+</html>

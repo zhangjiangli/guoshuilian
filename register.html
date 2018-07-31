@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo"></a>
+        <span>已有账号，立即
+            <a href="./login.html" class="login">登录</a>
+            首页
+        </span>
+
+    </header>
+    <section>
+        <div class="contain">
+            <h1>欢迎注册国水联</h1>
+            <form action="">
+                <div class="inp inp1">
+                    <input type="text" class="tel" placeholder="请输入手机号码">
+                    <span class="close"></span>
+                    <div class="after">输入手机号码</div>
+                </div>
+                <div class="inp inp2">
+                    <input type="text" placeholder="请输入短信验证码" class="chit">
+                    <span class="close" style="right: 428px"></span>
+                    <span class="get getChit">免费获取</span>
+                    <div class="after">输入短信验证码</div>
+                </div>
+                <div class="inp inp3">
+                    <input type="text" placeholder="请输入验证码" class="yzm">
+                    <span class="close" style="right: 428px"></span>
+                    <span class="get getYzm">ASAD</span>
+                    <div class="after">输入验证码</div>
+                </div>
+                <div class="inp inp4">
+                    <input type="password" placeholder="设置6至20位登录密码" class="pwd">
+                    <span class="close"></span>
+                    <div class="after">输入正确的密码</div>
+                </div>
+                <div class="inp inp5">
+                    <input type="password" placeholder="请再次输入密码" class="confirmPwd">
+                    <span class="close"></span>
+                    <div class="after">两次输入密码不一致</div>
+                </div>
+                <div class="agree">
+                    <input type="checkbox" checked="checked" style="background: #0081cb">我同意
+                    <a href="javascript:;">《国水联用户协议》</a>
+                </div>
+                <button id="register" type="button">马上注册</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        CopyRight @ 广东国水联供应链管理有限公司 IPC备案号：XXXXXXXXXXXX
+        <span id="icon"></span>
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function () {
+        //选中输入框时候加边框 加关闭按钮
+        $(".inp input").focus(function () {
+            $(this).css("border", "none")
+            $(this).css("border", "solid 1px #0084c9").parent().siblings().find("input").css("border",
+                "solid 1px #c5c5c5")
+            if ($(this).val() != '') {
+                $(this).siblings(".close").show()
+            } else {
+                $(this).keyup(function () {
+                    $(this).siblings(".close").show()
+                })
+            }
+            $(".close").click(function () {
+                $(this).hide().siblings("input").val("")
+
+            })
+            $(this).parent().siblings().find(".close").hide()
+
+        })
+        //
+
+
+
+
+
+
+        $("#register").on("click", function () {
+            var telVal = $(".tel").val()
+            checkMobile(telVal);
+            if (telVal == '' || !flag) {
+                $(".inp1 .after").show();
+            }
+            if ($(".chit").val() == '') {
+                $(".inp2 .after").show()
+            }
+            if ($(".yzm").val() == '') {
+                $(".inp3 .after").show()
+            }
+            if (($(".pwd").val() == '' || ($(".pwd").val().length < 6 || $(".pwd").val().length > 20)) ||
+                !checkPassWord($(".pwd").val())) {
+                $(".inp4 .after").show()
+            }
+            if ($(".confirmPwd").val() == '' || ($(".confirmPwd").val() != $(".pwd").val())) {
+                $(".inp5 .after").show()
+            }
+        })
+        //倒计时
+        var time;
+        var setTime;
+        var isClick = true;
+        $(".getChit").on("click", function () {
+
+            if (!isClick) {
+                return;
+            }
+            time = 60;
+            $(this).html("(60s)").css("color", "#666");
+            isClick = false;
+            setTime = setInterval(timeMove, 1000);
+        })
+
+        function timeMove() {
+            if (time <= 1) {
+                clearInterval(setTime);
+                $(".getChit").html("免费获取");
+                isClick = true;
+                return;
+            }
+            time = time - 1;
+            $(".getChit").html("(" + time + "s)")
+        }
+        //验证手机的正则
+        function checkMobile(str) {
+            var reg = /^1(3[0-9]|5[189]|8[6789])[0-9]{8}$/
+            if (reg.test(str)) {
+                flag = true;
+            } else {
+                flag = false;
+            }
+        }
+
+        //验证密码的正则
+        function checkPassWord(password) { //密码必须包含数字和字母
+            var str = password;
+            var reg = new RegExp(/^(?![^a-zA-Z]+$)(?!\D+$)/);
+            if (reg.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+    })
+</script>
+
+</html>

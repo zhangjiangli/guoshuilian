@@ -1,0 +1,214 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  outline-style: none;
+  /*FF*/
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline-style: none;
+  /*FF*/
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+input {
+  border: none;
+  outline: none;
+}
+/* 咨询服务和回到顶部 */
+.service_con {
+  width: 410px;
+  height: 153px;
+  position: fixed;
+  top: 374px;
+  right: 20px;
+  z-index: 10000;
+}
+.service_info {
+  float: left;
+  width: 366px;
+  height: 153px;
+  font-size: 12px;
+  background: url("../images/service_window_bg.png") no-repeat center;
+  visibility: hidden;
+  /* visibility: visible; */
+}
+.service_info > div {
+  width: 320px;
+  height: 50%;
+}
+.service_info .t_l {
+  width: 248px;
+  height: 100%;
+  float: left;
+  padding-top: 28px;
+  padding-left: 60px;
+  background: url("../images/feedback.png") no-repeat 10% 62%;
+}
+.t_l p {
+  margin-bottom: 8px;
+}
+.service_info .t_r {
+  width: 72px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+  border: #e6e6e6 solid 1px;
+  margin-top: 32px;
+}
+.service_info_b .t_l {
+  padding-top: 15px;
+  background: url("../images/online_service.png") no-repeat 10% 41%;
+}
+.service_info_b .t_r {
+  margin-top: 21px;
+}
+.service {
+  width: 44px;
+  height: 128px;
+  margin-top: 9px;
+  padding-top: 40px;
+  padding-left: 14px;
+  color: #fff;
+  float: left;
+  font-size: 14px;
+  box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.4);
+  background: url("../images/service.png") no-repeat center 14%, #0081cb;
+}
+/* 回到顶部 */
+.goTop {
+  width: 44px;
+  height: 44px;
+  background: url("../images/goTop.png") no-repeat;
+  position: fixed;
+  top: 690px;
+  right: 20px;
+  z-index: 10000;
+  display: none;
+}

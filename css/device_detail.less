@@ -1,0 +1,389 @@
+body {
+    color: #333;
+    font-size: 14px;
+    
+    header{
+        height: 104px;
+    }
+    .navbar {
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 14px;
+        color: #0481ce;
+        .last_icon {
+            color: #989898;
+        }
+        .last_a {
+            color: #989898;
+        }
+    }
+    .mainDetail {
+        padding: 30px 40px 40px 40px; // height: 650px;
+        border: solid #e6e6e6 1px;
+        .myTitle {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #666;
+            select {
+                width: 108px;
+                height: 30px;
+            }
+            button {
+                width: 88px;
+                height: 30px;
+                background: #0481ce;
+                color: #fff;
+                margin-left: 16px;
+            }
+        }
+        .detail_contain {
+            margin-top: 24px;
+            height: 620px;
+            .detail_tab {
+                float: left;
+                width: 800px;
+                height: 620px;
+                margin-right: 12px;
+                .tab_nav {
+                    height: 40px;
+                    line-height: 40px;
+                    background: #f5f5f5;
+                    cursor: pointer;
+                    >div {
+                        float: left;
+                        padding: 0 24px;
+                    }
+                    .tab_active {
+                        color: #fff;
+                        background: #0081cb;
+                    }
+                }
+                .tab_info {
+                    width: 100%;
+                    height: 580px;
+                    position: relative;
+                    >div {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                        table {
+                            // height: 495px; // overflow-y: scroll;
+                            tr {
+                                height: 44px;
+                                line-height: 44px;
+                                th,
+                                td {
+                                    width: 114.25px;
+                                    height: 44px;
+                                    text-align: center; // padding: 0 10px;
+                                    border-bottom: solid #e6e6e6 1px;
+                                    #add {
+                                        width: 68px;
+                                        height: 32px;
+                                        background: #f8f8f8;
+                                        color: #0081cb;
+                                    }
+                                }
+                            }
+                        }
+                        .table_box {
+                            height: 450px;
+                            overflow: auto;
+                            table {
+                                tr {
+                                    td {
+                                        width: 110.86px;
+                                        height: 44px;
+                                        color: #666;
+                                        text-align: center; // padding: 0 10px;
+                                        border-bottom: dashed #e6e6e6 1px;
+                                    }
+                                    td:last-child {
+                                        color: #333;
+                                        .edit {
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .subtotal {
+                            position: absolute;
+                            right: 20px;
+                            bottom: 44px;
+                            span {
+                                color: #e3582a;
+                                font-weight: bold;
+                            }
+                        }
+                        .deviceCost {
+                            position: absolute; // margin-bottom: 20px;
+                            right: 20px;
+                            bottom: 20px;
+                            span {
+                                color: #e3582a;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .tab_1_con {
+                        display: block
+                    }
+                }
+            }
+            .info {
+                float: left;
+                width: 306px;
+                height: 620px;
+                padding: 25px 10px;
+                border: #e6e6e6 solid 1px;
+                background: #f8f8f8;
+                h3 {
+                    font-size: 22px;
+                    font-weight: 400;
+                    ;
+                    margin-bottom: 20px;
+                }
+                .tell_box {
+                    >div {
+                        float: left;
+                        img {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                    .tell {
+                        color: #0081cb;
+                        margin-right: 20px;
+                    }
+                    .save{
+                        cursor: pointer;
+                    }
+                }
+                .ul {
+                    margin-top: 10px;
+                    ul {
+                        float: left;
+                        li {
+                            margin-top: 34px;
+                            .el-input-number {
+                                line-height: 22px;
+                            }
+                            .el-input-number__decrease.is-disabled,
+                            .el-input-number__increase.is-disabled {
+                                width: 22px;
+                            }
+                            .el-input-number__increase {
+                                width: 22px;
+                            }
+                            .el-input-number .el-input {
+                                height: 24px;
+                            }
+                            .el-input-number .el-input__inner {
+                                height: 24px;
+                            }
+                            .el-input-number__decrease {
+                                width: 22px;
+                            }
+                            .el-input-number {
+                                width: 110px;
+                            }
+                        }
+                        li:last-child {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .name {
+                        width: 94px;
+                    }
+                    .message {
+                        width: 186px;
+                        li {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+                            white-space: nowrap;
+                            width: 186px;
+                        }
+                    }
+                }
+                .btns {
+                    margin-top: 28px;
+                    margin-bottom: 50px;
+                    button {
+                        width: 122px;
+                        height: 38px;
+                        line-height: 38px;
+                        color: #f05633;
+                        font-size: 16px;
+                        background: #fff;
+                        outline: none;
+                        border: solid 1px #f05633;
+                        margin-right: 20px;
+                        float: left;
+                    }
+                    button:hover {
+                        background: #f05633;
+                        color: #fff;
+                    }
+                    .btnStyle {
+                        background: #f05633;
+                        color: #fff;
+                    }
+                    #giveEarnest {
+                        margin-right: 0
+                    }
+                }
+            }
+        }
+    }
+    .tab_box {
+        margin-top: 20px;
+        height: 1028px;
+        border: 1px solid #e6e6e6;
+        .top {
+            height: 44px;
+            border-bottom: 1px solid #e6e6e6;
+            >div {
+                height: 43px;
+                line-height: 43px;
+                padding: 0 26px;
+                float: left;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .tab_active {
+                color: #fff;
+                background: #0081cb;
+                outline: #0081cb solid 1px;
+            }
+        }
+        .contain {
+            height: 100%;
+            padding: 24px 40px;
+            font-size: 14px;
+            .introduce {
+                .font {
+                    line-height: 28px;
+                }
+                .con_img1 {
+                    margin: 20px 0 50px 0;
+                }
+                h4 {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+            }
+            .assess {
+                display: none;
+                .assess_detail {
+                    border-bottom: #e6e6e6 solid 1px;
+                    padding-top: 24px;
+                    padding-bottom: 36px;
+                    .user_info {
+                        height: 40px;
+                        line-height: 40px;
+                        padding-left: 0;
+                        margin-bottom: 10px;
+                        .photo {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        .user_name {
+                            height: 100%;
+                            line-height: 40px;
+                            margin-left: 12px;
+                            margin-right: 28px;
+                        }
+                        .rank {
+                            height: 100%;
+                            line-height: 40%;
+                            padding-top: 11px;
+                            img {
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .user_info>div {
+                        float: left;
+                    }
+                    .say_time {
+                        font-size: 12px;
+                        color: #9d9d9d;
+                    }
+                }
+                .assess_detail>p {
+                    padding-left: 51px;
+                    margin-bottom: 20px;
+                }
+                .page {
+                    padding-top: 28px;
+                    margin-bottom: 90px;
+                    #myPage {
+                        >div {
+                            float: left;
+                        }
+                        .layui-laypage a {
+                            margin-left: 4px;
+                            margin-right: 4px;
+                        }
+                        .layui-laypage a:hover {
+                            color: #0081cb;
+                        }
+                        .layui-laypage .layui-laypage-curr {
+                            position: relative;
+                            margin-left: 4px;
+                            margin-right: 4px;
+                        }
+                        .layui-laypage .layui-laypage-spr {
+                            color: #999;
+                            font-weight: 700;
+                            margin-left: 4px;
+                            margin-right: 4px;
+                        }
+                        .layui-laypage .layui-laypage-curr .layui-laypage-em {
+                            background-color: #fff;
+                        }
+                        .layui-laypage .layui-laypage-curr em {
+                            color: #0081cb;
+                        }
+                        .layui-laypage button {
+                            background: #0081cb;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: 48px;
+        margin-top: 38px;
+        line-height: 48px;
+        text-align: center;
+        background: #373e41;
+        color: #959898;
+        font-size: 12px;
+        
+    }
+}
+.layui-layer-btn0{
+    border: 1px solid #dedede!important;
+    background-color: #fff!important;
+    color: #333!important;
+}
+.layui-layer-btn1{
+    border-color: #1E9FFF!important;
+    background-color: #1E9FFF!important;
+    color: #fff!important;
+}

@@ -1,0 +1,374 @@
+body {
+  color: #333;
+  font-size: 14px;
+}
+body header {
+  height: 104px;
+}
+body .navbar {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 14px;
+  color: #0481ce;
+}
+body .navbar .last_icon {
+  color: #989898;
+}
+body .navbar .last_a {
+  color: #989898;
+}
+body .mainDetail {
+  padding: 30px 40px 40px 40px;
+  border: solid #e6e6e6 1px;
+}
+body .mainDetail .myTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+body .mainDetail p {
+  color: #666;
+}
+body .mainDetail p select {
+  width: 108px;
+  height: 30px;
+}
+body .mainDetail p button {
+  width: 88px;
+  height: 30px;
+  background: #0481ce;
+  color: #fff;
+  margin-left: 16px;
+}
+body .mainDetail .detail_contain {
+  margin-top: 24px;
+  height: 620px;
+}
+body .mainDetail .detail_contain .detail_tab {
+  float: left;
+  width: 800px;
+  height: 620px;
+  margin-right: 12px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_nav {
+  height: 40px;
+  line-height: 40px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+body .mainDetail .detail_contain .detail_tab .tab_nav > div {
+  float: left;
+  padding: 0 24px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_nav .tab_active {
+  color: #fff;
+  background: #0081cb;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info {
+  width: 100%;
+  height: 580px;
+  position: relative;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div table tr {
+  height: 44px;
+  line-height: 44px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div table tr th,
+body .mainDetail .detail_contain .detail_tab .tab_info > div table tr td {
+  width: 114.25px;
+  height: 44px;
+  text-align: center;
+  border-bottom: solid #e6e6e6 1px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div table tr th #add,
+body .mainDetail .detail_contain .detail_tab .tab_info > div table tr td #add {
+  width: 68px;
+  height: 32px;
+  background: #f8f8f8;
+  color: #0081cb;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .table_box {
+  height: 450px;
+  overflow: auto;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .table_box table tr td {
+  width: 110.86px;
+  height: 44px;
+  color: #666;
+  text-align: center;
+  border-bottom: dashed #e6e6e6 1px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .table_box table tr td:last-child {
+  color: #333;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .table_box table tr td:last-child .edit {
+  margin-right: 10px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .subtotal {
+  position: absolute;
+  right: 20px;
+  bottom: 44px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .subtotal span {
+  color: #e3582a;
+  font-weight: bold;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .deviceCost {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info > div .deviceCost span {
+  color: #e3582a;
+  font-weight: bold;
+}
+body .mainDetail .detail_contain .detail_tab .tab_info .tab_1_con {
+  display: block;
+}
+body .mainDetail .detail_contain .info {
+  float: left;
+  width: 306px;
+  height: 620px;
+  padding: 25px 10px;
+  border: #e6e6e6 solid 1px;
+  background: #f8f8f8;
+}
+body .mainDetail .detail_contain .info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+body .mainDetail .detail_contain .info .tell_box > div {
+  float: left;
+}
+body .mainDetail .detail_contain .info .tell_box > div img {
+  display: inline-block;
+  vertical-align: middle;
+}
+body .mainDetail .detail_contain .info .tell_box .tell {
+  color: #0081cb;
+  margin-right: 20px;
+}
+body .mainDetail .detail_contain .info .tell_box .save {
+  cursor: pointer;
+}
+body .mainDetail .detail_contain .info .ul {
+  margin-top: 10px;
+}
+body .mainDetail .detail_contain .info .ul ul {
+  float: left;
+}
+body .mainDetail .detail_contain .info .ul ul li {
+  margin-top: 34px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number {
+  line-height: 22px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number__decrease.is-disabled,
+body .mainDetail .detail_contain .info .ul ul li .el-input-number__increase.is-disabled {
+  width: 22px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number__increase {
+  width: 22px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number .el-input {
+  height: 24px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number .el-input__inner {
+  height: 24px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number__decrease {
+  width: 22px;
+}
+body .mainDetail .detail_contain .info .ul ul li .el-input-number {
+  width: 110px;
+}
+body .mainDetail .detail_contain .info .ul ul li:last-child {
+  margin-bottom: 30px;
+}
+body .mainDetail .detail_contain .info .ul .name {
+  width: 94px;
+}
+body .mainDetail .detail_contain .info .ul .message {
+  width: 186px;
+}
+body .mainDetail .detail_contain .info .ul .message li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  width: 186px;
+}
+body .mainDetail .detail_contain .info .btns {
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+body .mainDetail .detail_contain .info .btns button {
+  width: 122px;
+  height: 38px;
+  line-height: 38px;
+  color: #f05633;
+  font-size: 16px;
+  background: #fff;
+  outline: none;
+  border: solid 1px #f05633;
+  margin-right: 20px;
+  float: left;
+}
+body .mainDetail .detail_contain .info .btns button:hover {
+  background: #f05633;
+  color: #fff;
+}
+body .mainDetail .detail_contain .info .btns .btnStyle {
+  background: #f05633;
+  color: #fff;
+}
+body .mainDetail .detail_contain .info .btns #giveEarnest {
+  margin-right: 0;
+}
+body .tab_box {
+  margin-top: 20px;
+  height: 1028px;
+  border: 1px solid #e6e6e6;
+}
+body .tab_box .top {
+  height: 44px;
+  border-bottom: 1px solid #e6e6e6;
+}
+body .tab_box .top > div {
+  height: 43px;
+  line-height: 43px;
+  padding: 0 26px;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+body .tab_box .top .tab_active {
+  color: #fff;
+  background: #0081cb;
+  outline: #0081cb solid 1px;
+}
+body .tab_box .contain {
+  height: 100%;
+  padding: 24px 40px;
+  font-size: 14px;
+}
+body .tab_box .contain .introduce .font {
+  line-height: 28px;
+}
+body .tab_box .contain .introduce .con_img1 {
+  margin: 20px 0 50px 0;
+}
+body .tab_box .contain .introduce h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+body .tab_box .contain .assess {
+  display: none;
+}
+body .tab_box .contain .assess .assess_detail {
+  border-bottom: #e6e6e6 solid 1px;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+body .tab_box .contain .assess .assess_detail .user_info {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+body .tab_box .contain .assess .assess_detail .user_info .photo {
+  width: 40px;
+  height: 40px;
+}
+body .tab_box .contain .assess .assess_detail .user_info .user_name {
+  height: 100%;
+  line-height: 40px;
+  margin-left: 12px;
+  margin-right: 28px;
+}
+body .tab_box .contain .assess .assess_detail .user_info .rank {
+  height: 100%;
+  line-height: 40%;
+  padding-top: 11px;
+}
+body .tab_box .contain .assess .assess_detail .user_info .rank img {
+  vertical-align: middle;
+}
+body .tab_box .contain .assess .assess_detail .user_info > div {
+  float: left;
+}
+body .tab_box .contain .assess .assess_detail .say_time {
+  font-size: 12px;
+  color: #9d9d9d;
+}
+body .tab_box .contain .assess .assess_detail > p {
+  padding-left: 51px;
+  margin-bottom: 20px;
+}
+body .tab_box .contain .assess .page {
+  padding-top: 28px;
+  margin-bottom: 90px;
+}
+body .tab_box .contain .assess .page #myPage > div {
+  float: left;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage a:hover {
+  color: #0081cb;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage .layui-laypage-curr {
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage .layui-laypage-spr {
+  color: #999;
+  font-weight: 700;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #fff;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage .layui-laypage-curr em {
+  color: #0081cb;
+}
+body .tab_box .contain .assess .page #myPage .layui-laypage button {
+  background: #0081cb;
+  color: #fff;
+}
+body footer {
+  width: 100%;
+  height: 48px;
+  margin-top: 38px;
+  line-height: 48px;
+  text-align: center;
+  background: #373e41;
+  color: #959898;
+  font-size: 12px;
+}
+.layui-layer-btn0 {
+  border: 1px solid #dedede!important;
+  background-color: #fff!important;
+  color: #333!important;
+}
+.layui-layer-btn1 {
+  border-color: #1E9FFF!important;
+  background-color: #1E9FFF!important;
+  color: #fff!important;
+}
